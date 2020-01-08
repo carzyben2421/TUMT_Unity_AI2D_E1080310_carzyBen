@@ -6,9 +6,9 @@ public class Player : MonoBehaviour
     public int hp = 100;
     public Slider hpslider;
 
-    public Text textTacos;
-    public int TacosCount;
-    public int TacosTotal;
+    public Text textCOIN;
+    public int COINCount;
+    public int COINTotal;
 
     public Text textTime;
     public float gameTime;
@@ -27,14 +27,14 @@ public class Player : MonoBehaviour
             if (hp <= 0) Dead();
         }
 
-        if (other.tag == "Tacos")
+        if (other.tag == "COIN")
         {
-            TacosCount++;
-            textTacos.text = "Tacos : " + TacosCount + " / " + TacosTotal;
+            COINCount++;
+            textCOIN.text = "COIN : " + COINCount + " / " + COINTotal;
             Destroy(other.gameObject);
         }
 
-        if (other.name =="終點" && TacosCount == TacosTotal)
+        if (other.name =="終點" && COINCount == COINTotal)
         {
            GameOver();
         }
@@ -57,8 +57,8 @@ public class Player : MonoBehaviour
         {
             PlayerPrefs.SetFloat("最佳紀錄", 99999);
         }
-        TacosTotal = GameObject.FindGameObjectsWithTag("Tacos").Length;
-        textTacos.text = "Tacos : 0 / " + TacosTotal;
+        COINTotal = GameObject.FindGameObjectsWithTag("COIN").Length;
+        textCOIN.text = "COIN : 0/" + COINTotal;
     }
 
     private void Update()

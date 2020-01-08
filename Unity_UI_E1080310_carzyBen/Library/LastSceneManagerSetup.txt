@@ -1,4 +1,4 @@
 sceneSetups:
-- path: "Assets/Invector-3rdPersonController/Basic Locomotion LITE/\u904A\u6232\u5834\u666F.unity"
+- path: Assets/Scenes/0209.unity
   isLoaded: 1
   isActive: 1

@@ -21,18 +21,13 @@ public class GameManager : MonoBehaviour
     }
     public void Play()
     {
-      //eneManager.LoadScene("AK47");
-        StartCoroutine(Loading());
+       StartCoroutine(Loading());
     }
 
     private IEnumerator Loading()
     {
-        //print("測試1");
-        //yield return new WaitForSeconds(1);
-        //print("測試2");
-
-        AsyncOperation ao = SceneManager.LoadSceneAsync("遊戲場景");
-        ao.allowSceneActivation = false;
+         AsyncOperation ao = SceneManager.LoadSceneAsync("遊戲場景");
+         ao.allowSceneActivation = false;
 
         while (ao.isDone == false)
         {
@@ -51,7 +46,7 @@ public class GameManager : MonoBehaviour
 
     public void Replay()
     {
-        SceneManager.LoadScene("0209");
+        SceneManager.LoadScene("遊戲場景");
      }
 
     public void Quit()
