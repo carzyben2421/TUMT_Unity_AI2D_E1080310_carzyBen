@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 00000000000000000000000000000000
+  productGUID: a90ab109ae3434549b79c6903e6c5c6a
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -621,7 +621,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 25faea95-847e-47d2-96a0-64ae3fe3c057
-  projectName: 
+  projectName: Unity_UI_E1080310_carzyBen
   organizationId: carzyben
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
